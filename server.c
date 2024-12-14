@@ -1,4 +1,5 @@
-#include "minitalk.h"
+#include <signal.h>
+#include <unistd.h>
 
 static void	putnbr(int nb)
 {
@@ -39,7 +40,7 @@ int	main(void)
 {
 	int	pid;
 
-	pid = (int)(getpid());
+	pid = getpid();
 	write(1, "serverPID: ", 12);
 	putnbr(pid);
 	write(1, "\n", 1);

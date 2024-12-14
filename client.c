@@ -1,4 +1,5 @@
-#include "minitalk.h"
+#include <signal.h>
+#include <unistd.h>
 
 static int	ft_atoi(const char *str)
 {
