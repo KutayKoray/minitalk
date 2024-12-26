@@ -6,7 +6,7 @@
 /*   By: kkoray <kkoray@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 11:35:30 by kkoray            #+#    #+#             */
-/*   Updated: 2024/12/26 15:11:27 by kkoray           ###   ########.fr       */
+/*   Updated: 2024/12/26 15:30:41 by kkoray           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static void	send_char(pid_t server_pid, char c)
 			kill(server_pid, SIGUSR1);
 		else
 			kill(server_pid, SIGUSR2);
-		usleep(100);
+		usleep(1000);
 		i++;
 	}
 }
